@@ -1,0 +1,22 @@
+# One entry per front page you want labels for. Start with ONE outlet.
+#
+# target_local_time : the snapshot nearest this local time is used for each day
+# max_hours_off     : if the nearest snapshot is further than this, the day is
+#                     recorded as "no_snapshot" (NOT as an empty front page)
+# headline_selector : optional CSS selector for headline elements. If omitted,
+#                     a generic parser (h1/h2/h3 with links) is used.
+#                     Inspect a saved snapshot and tune this per outlet; layouts
+#                     change over time, so check coverage.parquet regularly.
+outlets:
+  - name: nytimes
+    url: https://www.nytimes.com/
+    timezone: America/New_York
+    target_local_time: "06:00"
+    max_hours_off: 8
+    # headline_selector: "section.story-wrapper a p"
+
+  - name: bbc
+    url: https://www.bbc.com/news
+    timezone: Europe/London
+    target_local_time: "06:00"
+    max_hours_off: 8

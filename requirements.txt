@@ -1,0 +1,9 @@
+google-cloud-bigquery[pandas,bqstorage]
+db-dtypes
+pandas
+pyarrow
+pyyaml
+requests
+beautifulsoup4
+lxml
+tqdm

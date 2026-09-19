@@ -1,0 +1,13 @@
+# Date range: start inclusive, end EXCLUSIVE
+start_date: 2026-06-01
+end_date: 2026-09-01
+
+# BigQuery
+gcp_project: your-gcp-project-id
+max_bytes_billed_gb: 50        # hard cap per single query (one day, one table)
+min_event_mentions: 5          # events table is NOT source-filtered; this controls size
+
+# Wayback
+user_agent: "frontpage-predictor/0.1 (research; contact: you@example.com)"
+request_delay_s: 1.0           # be polite to archive.org
+max_retries: 5

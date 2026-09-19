@@ -1,15 +1,52 @@
-# v0 sandbox internal files
-__v0_runtime_loader.js
-__v0_devtools.tsx
-__v0_jsx-dev-runtime.ts
-.snowflake/
-.v0-trash/
-.vercel/
+# --- Data (large, regenerable; never commit) ---
+data/raw/*
+data/interim/*
+data/processed/*
+!data/raw/.gitkeep
+!data/interim/.gitkeep
+!data/processed/.gitkeep
 
-# Environment variables
-.env*.local
+# Keep run manifests if you want a record of what was pulled
+!data/raw/_manifests/
 
-# Common ignores
-node_modules
-.next/
+# --- Model artifacts ---
+checkpoints/
+models/
+*.pt
+*.pth
+*.safetensors
+*.gguf
+*.ckpt
+wandb/
+runs/
+lightning_logs/
+
+# --- Credentials and local config ---
+.env
+.env.*
+*.pem
+*.key
+*service-account*.json
+*credentials*.json
+config/*.local.yaml
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- Notebooks ---
+.ipynb_checkpoints/
+
+# --- Editors / OS ---
+.vscode/
+.idea/
 .DS_Store
+Thumbs.db
