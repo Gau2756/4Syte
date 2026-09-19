@@ -3,7 +3,7 @@ start_date: 2026-06-01
 end_date: 2026-09-01
 
 # BigQuery
-gcp_project: your-gcp-project-id
+gcp_project: adept-mountain-472719-p3
 max_bytes_billed_gb: 50        # hard cap per single query (one day, one table)
 min_event_mentions: 5          # events table is NOT source-filtered; this controls size
 
