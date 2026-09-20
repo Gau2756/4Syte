@@ -1,23 +1,37 @@
-# Domains to keep from GDELT (matches SourceCommonName / MentionSourceName).
-# Start small; include your target outlets plus other tier-1 sources.
 sources:
+  # US national
   - nytimes.com
-  - washingtonpost.com
-  - wsj.com
-  - bbc.co.uk
-  - bbc.com
-  - reuters.com
-  - apnews.com
-  - theguardian.com
   - cnn.com
+  - nbcnews.com
+  - cbsnews.com
   - foxnews.com
   - npr.org
   - bloomberg.com
-  - cbsnews.com
-  - nbcnews.com
-  - abcnews.go.com
-  - usatoday.com
+  - cnbc.com
+  - nypost.com
+  - thehill.com
+  - newsweek.com
+  - businessinsider.com
+  - time.com
+  - theatlantic.com
+  - slate.com
+  # US regional
   - latimes.com
-  - politico.com
+  - chicagotribune.com
+  - bostonglobe.com
+  - nydailynews.com
+  - seattletimes.com
+  # International
+  - bbc.com
+  - bbc.co.uk
+  - reuters.com
+  - theguardian.com
+  - independent.co.uk
   - aljazeera.com
-  - ft.com
+  - dw.com
+  - euronews.com
+  - politico.eu
+  - cbc.ca
+  - theglobeandmail.com
+  - abc.net.au
+  - smh.com.au

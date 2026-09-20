@@ -99,7 +99,7 @@ def pull_day(client, table, day, sources, min_mentions, max_bytes):
         maximum_bytes_billed=max_bytes,
     )
     job = client.query(SQL[table], job_config=cfg)
-    df = job.to_dataframe()
+    df = job.result().to_dataframe(create_bqstorage_client=False)
     return df, job.total_bytes_billed or 0
 
 

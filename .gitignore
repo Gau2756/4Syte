@@ -50,3 +50,14 @@ dist/
 .idea/
 .DS_Store
 Thumbs.db
+
+# Generated datasets
+/frontpage-predictor/data/raw/**
+/frontpage-predictor/data/interim/**
+
+# Keep documentation
+!/frontpage-predictor/data/raw/README.md
+!/frontpage-predictor/data/interim/README.md
+
+# Extraction logs
+/frontpage-predictor/*.log
